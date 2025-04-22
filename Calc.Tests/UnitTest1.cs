@@ -17,4 +17,16 @@ public class Addition
         // Assert
         Assert.Equal(expected, result);
     }
+
+    [Fact]
+    public void HandlesOverflow()
+    {
+        // Arrange
+        var calc = new Math.Calc();
+        float a = float.MaxValue;
+        float b = float.MaxValue;
+
+        // Act and Assert
+        Assert.Throws<ArgumentException>(() => calc.Add(a, b));
+    }
 }
