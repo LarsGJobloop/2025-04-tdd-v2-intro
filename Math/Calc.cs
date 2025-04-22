@@ -4,6 +4,6 @@ public class Calc
 {
   public float Add(float a, float b)
   {
-    return 2;
+    return a + b;
   }
 }
