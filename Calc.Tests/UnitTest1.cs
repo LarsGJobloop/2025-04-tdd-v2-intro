@@ -42,3 +42,21 @@ public class Addition
         Assert.Throws<ArgumentException>(() => calc.Add(a, b));
     }
 }
+
+public class Division
+{
+    [Theory]
+    [InlineData(1, 1, 1)]
+    [InlineData(2, 1, 2)]
+    public void DividesTwoNumbers(float a, float b, float expected)
+    {
+        // Arrange
+        var calc = new Math.Calc();
+
+        // Act
+        var result = calc.Divide(a, b);
+
+        // Assert
+        Assert.Equal(expected, result);
+    }
+}

@@ -13,4 +13,9 @@ public class Calc
 
     return a + b;
   }
+
+  public float Divide(float a, float b)
+  {
+    return a / b;
+  }
 }
