@@ -1,10 +1,20 @@
 ﻿namespace Calc.Tests;
 
-public class UnitTest1
+public class Addition
 {
     [Fact]
-    public void Test1()
+    public void SumsTwoIntegers()
     {
+        // Arrange
+        var calc = new Math.Calc();
+        float a = 1;
+        float b = 1;
+        float expected = 2;
 
+        // Act
+        var result = calc.Add(a, b);
+
+        // Assert
+        Assert.Equal(expected, result);
     }
 }
