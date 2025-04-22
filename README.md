@@ -34,3 +34,7 @@
 ## Libraries
 
 - xUnit: Veldig vanlig bibliotek for å skrive tester
+
+## Sratches
+
+![Skratches](/docs/tdd-skratches.png)
