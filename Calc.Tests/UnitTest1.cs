@@ -59,4 +59,20 @@ public class Division
         // Assert
         Assert.Equal(expected, result);
     }
+
+    [Fact]
+    public void DivisionByZero()
+    {
+        // Arrange
+        var calc = new Math.Calc();
+        float a = 1;
+        float b = 0;
+        float expected = float.PositiveInfinity;
+
+        // Act
+        var result = calc.Divide(a, b);
+
+        // Assert
+        Assert.Equal(expected, result);
+    }
 }
