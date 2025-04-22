@@ -29,4 +29,16 @@ public class Addition
         // Act and Assert
         Assert.Throws<ArgumentException>(() => calc.Add(a, b));
     }
+
+    [Fact]
+    public void HandlesUnderflow()
+    {
+        // Arrange
+        var calc = new Math.Calc();
+        float a = float.MinValue;
+        float b = float.MinValue;
+
+        // Act and Assert
+        Assert.Throws<ArgumentException>(() => calc.Add(a, b));
+    }
 }
